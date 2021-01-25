@@ -1,0 +1,83 @@
+Request #1
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX my: <http://127.0.0.1/bg/ont/test1#> 
+SELECT (COUNT(?Users) AS ?Count)
+WHERE 
+{  
+    <http://127.0.0.1/Tariff_1/> my:includes ?Users .    
+    ?Prediction_node rdf:subject ?Users .
+    ?Prediction_node rdf:object ?Service .
+    ?Prediction_ID my:prediction_detailes ?Prediction_node . 
+    ?Prediction_ID my:has_state_value ?Value .
+  	?Prediction_ID my:prediction_timestamp ?Timestamp
+       FILTER(regex(?Timestamp, "2021-01-19T\\S\\S:00:00")) .    
+   } 
+   
+Response:
+Count
+224
+
+Request #2
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX my: <http://127.0.0.1/bg/ont/test1#> 
+SELECT (COUNT(?Users) AS ?Count)
+WHERE 
+{  
+    <http://127.0.0.1/Tariff_2/> my:includes ?Users .    
+    ?Prediction_node rdf:subject ?Users .
+    ?Prediction_node rdf:object ?Service .
+    ?Prediction_ID my:prediction_detailes ?Prediction_node . 
+    ?Prediction_ID my:has_state_value ?Value .
+  	?Prediction_ID my:prediction_timestamp ?Timestamp
+       FILTER(regex(?Timestamp, "2021-01-19T\\S\\S:00:00")) .    
+   } 
+   
+Response:
+Count
+228
+
+Request #3
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX my: <http://127.0.0.1/bg/ont/test1#> 
+SELECT (COUNT(?Users) AS ?Count)
+WHERE 
+{  
+    <http://127.0.0.1/Tariff_3/> my:includes ?Users .    
+    ?Prediction_node rdf:subject ?Users .
+    ?Prediction_node rdf:object ?Service .
+    ?Prediction_ID my:prediction_detailes ?Prediction_node . 
+    ?Prediction_ID my:has_state_value ?Value .
+  	?Prediction_ID my:prediction_timestamp ?Timestamp
+       FILTER(regex(?Timestamp, "2021-01-19T\\S\\S:00:00")) .    
+   } 
+   
+Response:
+Count
+243
+
+Request #4
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX my: <http://127.0.0.1/bg/ont/test1#> 
+SELECT (COUNT(?Users) AS ?Count)
+WHERE 
+{  
+    <http://127.0.0.1/Tariff_4/> my:includes ?Users .    
+    ?Prediction_node rdf:subject ?Users .
+    ?Prediction_node rdf:object ?Service .
+    ?Prediction_ID my:prediction_detailes ?Prediction_node . 
+    ?Prediction_ID my:has_state_value ?Value .
+  	?Prediction_ID my:prediction_timestamp ?Timestamp
+       FILTER(regex(?Timestamp, "2021-01-19T\\S\\S:00:00")) .    
+   } 
+   
+Response:
+Count
+231
