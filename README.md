@@ -9,4 +9,6 @@ Create_prediction_nodes.py - Python script for creation predicted data;
 
 Predictions.xml - Predicted data in RDF/XML format;
 
-SPARQL_Requests.txt - SPARQL requests and results for providing direct inference step of deductive synthesis.
+SPARQL_Requests.txt - SPARQL requests and results for providing direct inference step of deductive synthesis;
+
+Blazegraph.zip - ZIP archive of Blazegrapf JNL file.
