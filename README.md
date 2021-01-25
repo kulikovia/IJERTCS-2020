@@ -1,10 +1,12 @@
 # IJERTCS-2020
-Objects Model Deductive synthesis algorithm
+CASE STUDY: Deductive synthesis of networks hierarchical knowledge graphs
 
-Deductive_synthesis_(SQL).py - executable Phyton script (Deductive synthesis algorithm);
+Base_rdf_1.xml - Inductive model in RDF/XML format;
 
-Model_base_req.npz and Model_base_links_req.npz - the reference model files;
+VOD_1.csv - Prediction rules;
 
-Test_facts1.csv and Test_facts2.csv - the set of facts files;
+Create_prediction_nodes.py - Python script for creation predicted data;
 
-DB_create_script.sql - PostgreSQL DB create script.
+Predictions.xml - Predicted data in RDF/XML format;
+
+SPARQL_Requests.txt - SPARQL requests and results for providing direct inference step of deductive synthesis.
